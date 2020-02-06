@@ -40,3 +40,34 @@ for _ in range(10):
                 break
     
     print("#{} {}".format(tc, res))
+
+
+    # for _ in range(10):
+    # tc = int(input())
+    # MAP = [list(map(int, input().split())) for _ in range(100)]
+    # visit = [[0] * 100 for _ in range(100)]
+    # for i in range(100):
+    #     if MAP[99][i] == 2:
+    #         y, x = 99, i
+    #         visit[y][x] = 1
+    #         break
+    # while 1:
+    #     # print(y, x)
+    #     if y == 0:
+    #         print("#{} {}".format(tc, x))
+    #         break
+    #     # 좌 확인
+    #     if x > 0:
+    #         if MAP[y][x-1] == 1 and visit[y][x-1] == 0:
+    #             y , x = y, x - 1
+    #             visit[y][x] = 1
+    #             continue
+    #     # 우 확인
+    #     if x < 99:
+    #         if MAP[y][x+1] == 1 and visit[y][x+1] == 0:
+    #             y , x = y, x + 1
+    #             visit[y][x] = 1
+    #             continue
+    #     # 아니면 위로
+    #     y , x = y - 1, x
+    #     visit[y][x] = 1
