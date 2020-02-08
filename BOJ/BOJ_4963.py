@@ -1,3 +1,7 @@
+"""
+섬의 개수
+재귀 쓸려면 재귀깊이를 늘리자!
+"""
 # from collections import deque
 # q = deque()
 import sys

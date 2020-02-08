@@ -1,3 +1,6 @@
+"""
+단지번호붙이기
+"""
 from collections import deque
 N = int(input())
 Map = [list(map(int, input())) for _ in range(N)]

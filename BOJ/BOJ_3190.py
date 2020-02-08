@@ -1,3 +1,6 @@
+"""
+뱀
+"""
 def dir_check(d, str): # 방향을 돌려준다.
     if str == 'D':
         d = (d + 1) % 4

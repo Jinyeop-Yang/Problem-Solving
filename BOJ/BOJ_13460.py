@@ -1,3 +1,6 @@
+"""
+구슬 탈출 2
+"""
 from collections import deque
 # import sys
 # sys.stdin = open("input.txt")

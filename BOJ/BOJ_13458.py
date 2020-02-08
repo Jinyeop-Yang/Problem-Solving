@@ -1,3 +1,6 @@
+"""
+시험 감독
+"""
 N = int(input())
 student = list(map(int, input().split()))
 B, C = map(int, input().split())
