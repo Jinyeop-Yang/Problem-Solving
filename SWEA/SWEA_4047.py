@@ -1,3 +1,6 @@
+"""
+영준이의 카드 카운팅
+"""
 # import sys
 # sys.stdin = open("input.txt")
 

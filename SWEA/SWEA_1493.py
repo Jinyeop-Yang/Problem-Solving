@@ -1,3 +1,6 @@
+"""
+수의 새로운 연산
+"""
 T = int(input())
 
 def f_pos(n):

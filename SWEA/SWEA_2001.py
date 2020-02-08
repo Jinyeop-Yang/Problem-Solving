@@ -1,3 +1,6 @@
+"""
+파리 퇴치
+"""
 def my_sum(i, j, m):
     hap = 0
     for a in range(i, m+i):

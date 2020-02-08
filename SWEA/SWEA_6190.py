@@ -1,3 +1,6 @@
+"""
+정곤이의 단조 증가하는 수
+"""
 T = int(input())
 
 for tc in range(T):

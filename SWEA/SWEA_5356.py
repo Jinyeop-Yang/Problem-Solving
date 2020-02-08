@@ -1,3 +1,6 @@
+"""
+의석이의 세로로 말해요
+"""
 T = int(input())
 
 for tc in range(T):
