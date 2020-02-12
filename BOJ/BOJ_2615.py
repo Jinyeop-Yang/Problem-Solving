@@ -1,6 +1,9 @@
+<<<<<<< HEAD
 """
 오목
 """
+=======
+>>>>>>> df5d13ef36d2c8625a5d5432b69b9b0920dc451e
 # import sys
 # sys.stdin = open("input.txt")
 
