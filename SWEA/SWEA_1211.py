@@ -1,3 +1,6 @@
+"""
+[S/W 문제해결 기본] 2일차 - Ladder2
+"""
 # import sys
 # sys.stdin = open("input.txt", "r")
 """

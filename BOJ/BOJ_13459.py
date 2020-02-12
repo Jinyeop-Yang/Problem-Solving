@@ -1,3 +1,6 @@
+"""
+구슬 탈출
+"""
 from collections import deque
 # import sys
 # sys.stdin = open("input.txt")
@@ -57,7 +60,8 @@ def solve(cnt, d, ry, rx, by, bx, hy, hx): # red, blue, hole
 
     while dq:
         cnt, d, ry, rx, by, bx, hy, hx = dq.popleft()
-        visit.add((ry, rx, by, bx))
+        if cnt > 9:
+            break
         for i in range(4): # 상하좌우 체크
             if cnt != 0: # 처음에는 상하좌우 다 돌아야 되기 때문에 거를 필요 없음
                 if d == 0 or d == 1:
@@ -70,20 +74,15 @@ def solve(cnt, d, ry, rx, by, bx, hy, hx): # red, blue, hole
                 continue
             r_check, next_ry, next_rx, r_cnt = move(i, ry, rx, hy, hx)
             if r_check: # 빨간색 공이 빠졌으면 끝
-                result = cnt + 1
+                result = 1
                 break
             if next_ry == next_by and next_rx == next_bx: # 옮겼을 때, 같은 위치면 이동
                 next_ry, next_rx, next_by, next_bx = compare_rb(i, next_ry, next_rx, next_by, next_bx, b_cnt > r_cnt)
             
-            if (next_ry, next_rx, next_by, next_bx) not in visit:
-                dq.append([cnt + 1, i, next_ry, next_rx, next_by, next_bx, hy, hx])
-
+            dq.append([cnt + 1, i, next_ry, next_rx, next_by, next_bx, hy, hx])
         if result != 0:
             break
-    if result > 0:
-        return result
-    else:
-        return -1
+    return result
 
 N, M = map(int, input().split())
 Map = [input() for _ in range(N)]
@@ -96,5 +95,5 @@ for i in range(N):
             red_y = i; red_x = j
         if Map[i][j] == 'O':
             hole_y = i; hole_x = j
-visit = set()
+
 print(solve(0, None, red_y, red_x, blue_y, blue_x, hole_y, hole_x))

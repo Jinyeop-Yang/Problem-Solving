@@ -1,3 +1,6 @@
+"""
+다솔이의 다이아몬드 장식
+"""
 T = int(input())
 
 for tc in range(T):

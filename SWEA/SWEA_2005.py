@@ -1,3 +1,6 @@
+"""
+파스칼의 삼각형
+"""
 #import sys
 #sys.stdin = open("a.txt")
 

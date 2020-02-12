@@ -1,3 +1,6 @@
+"""
+의석이의 세로로 말해요
+"""
 T = int(input())
 
 for tc in range(T):
@@ -8,7 +11,6 @@ for tc in range(T):
     for i in range(5):
         if length < len(string[i]):
             length = len(string[i])
-    
     for i in range(5):
         for j in range(len(string[i])):
             Map[i][j] = string[i][j]
