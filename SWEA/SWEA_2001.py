@@ -5,7 +5,7 @@ def my_sum(i, j, m):
     hap = 0
     for a in range(i, m+i):
         for b in range(j, m+j):
-           hap += Map[a][b]
+            hap += Map[a][b]
     return hap 
 
 T = int(input())

@@ -1,10 +1,8 @@
-<<<<<<< HEAD
 """
 단어 뒤집기 2
-"""s = input()
-=======
+"""
 s = input()
->>>>>>> df5d13ef36d2c8625a5d5432b69b9b0920dc451e
+
 i = flag = 0
 res = ''
 while i <len(s):
