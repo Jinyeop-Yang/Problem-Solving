@@ -4,7 +4,7 @@
 """
 from collections import deque
 
-def bfs(y, x, n):
+def bfs(y, x, n): #내가 아닌 다른 섬을 찾아가는 bfs
     global res
     visit[y][x] = 1
     q = deque()
@@ -23,7 +23,7 @@ def bfs(y, x, n):
                 visit[ny][nx] = 1
                 q.append((ny, nx, n, dist + 1))
 
-def init(y, x, n):
+def init(y, x, n): # 섬 labeling 해주는 dfs
     visit[y][x] = 1
     Map[y][x] = n
     for a, b in d:
@@ -38,6 +38,7 @@ Map = [list(map(int, input().split())) for _ in range(N)]
 visit = [[0] * N for _ in range(N)]
 temp = 1
 res = float('inf')
+
 for i in range(N):
     for j in range(N):
         if Map[i][j] == 1 and not visit[i][j]:
@@ -48,7 +49,6 @@ for i in range(N):
     for j in range(N):
         if Map[i][j] != 0:
             visit = [[0] * N for _ in range(N)]
-            cnt = 0
             for a, b in d:
                 ny = i + a
                 nx = j + b
