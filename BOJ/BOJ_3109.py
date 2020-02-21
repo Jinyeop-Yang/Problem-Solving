@@ -5,7 +5,8 @@ def dfs(y, x):
     global cnt
     visit[y][x] = 1
     if x == c - 1:
-        cnt += 1; return 1
+        # cnt += 1 이거 주석해체해주면 됨 vscode에서 에러 떠서 잠시 주석
+        return 1
     for a, b in d:
         ny = y + a
         nx = x + b
