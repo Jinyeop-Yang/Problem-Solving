@@ -39,20 +39,20 @@ for tc in range(10):
     print("#{} {}".format(tc + 1, res))
 """
 for tc in range(10):
-N = int(input())
-Map = [list(map(int, input().split())) for _ in range(N)]
-res = 0
-for i in range(N - 1):
-    for j in range(N):
-        if Map[i][j] == 1:
-            y = i
-            while 1:
-                y += 1
-                if y < N:
-                    if Map[y][j] == 1:
-                        break
-                    elif Map[y][j] == 2:
-                        res += 1; break
-                else: break
-print("#{} {}".format(tc + 1, res))
+    N = int(input())
+    Map = [list(map(int, input().split())) for _ in range(N)]
+    res = 0
+    for i in range(N - 1):
+        for j in range(N):
+            if Map[i][j] == 1:
+                y = i
+                while 1:
+                    y += 1
+                    if y < N:
+                        if Map[y][j] == 1:
+                            break
+                        elif Map[y][j] == 2:
+                            res += 1; break
+                    else: break
+    print("#{} {}".format(tc + 1, res))
 """
