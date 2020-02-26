@@ -30,8 +30,7 @@ for tc in range(T):
                     for b in range(j, j+3):
                         check[Map[a][b] - 1] += 1
                         if check[Map[a][b] - 1] > 1:
-                            flag = 1;
-                            break
+                            flag = 1; break
                     if flag: break
 
     if flag:
